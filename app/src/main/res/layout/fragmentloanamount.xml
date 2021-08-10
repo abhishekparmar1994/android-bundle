@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15ssp"
+                        android:hint="Required Loan Amount"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        tools:ignore="MissingConstraints"
+                        app:boxStrokeWidth="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/edittext_signup_peding_left"
+                        android:paddingRight="@dimen/edittext_signup_peding">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtLoanAmount"
+                            android:inputType="number"
+                            android:maxLength="7"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_border"
+                        android:orientation="horizontal"
+                        android:padding="9dp">
+
+                        <Spinner
+                            android:id="@+id/spinneremi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:dropDownVerticalOffset="43dp"
+                            android:gravity="center"
+                            android:popupBackground="@android:color/white"
+                            android:spinnerMode="dropdown"
+                            android:entries="@array/spinner_item"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_drop_doun" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtemidate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Emi Payment Date"
+                        android:textColorHint="@color/edti_text_color"
+                        android:textColor="@color/black"
+                        android:drawableRight="@drawable/ic_calendar"
+                        android:background="@drawable/imageviewborder"
+                        android:textSize="@dimen/_15sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_15sdp"></TextView>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15ssp"
+                        android:hint="Monthly Income"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        tools:ignore="MissingConstraints"
+                        app:boxStrokeWidth="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/edittext_signup_peding_left"
+                        android:paddingRight="@dimen/edittext_signup_peding"
+                        android:layout_marginTop="@dimen/_15sdp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edtLoanIncome"
+                            android:inputType="number"
+                            android:maxLength="7"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginBottom="@dimen/_15ssp"-->
+<!--                        android:hint="Mobile Number"-->
+<!--                        app:endIconMode="clear_text"-->
+<!--                        app:endIconTint="@color/black"-->
+<!--                        tools:ignore="MissingConstraints"-->
+<!--                        app:boxStrokeWidth="@dimen/_2sdp"-->
+<!--                        android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+<!--                        android:paddingRight="@dimen/edittext_signup_peding">-->
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:id="@+id/edtMobileNumberDet"/>-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtNameDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Name"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtEmailDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Email"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtMobileNumberDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Mobile Number"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtMobileNumberTwoDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Mobile Number"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtAddreshDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Addresh"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+                    <!--                   <EditText-->
+                    <!--                       android:id="@+id/edtcountryDet"-->
+                    <!--                       android:layout_width="fill_parent"-->
+                    <!--                       android:layout_height="wrap_content"-->
+                    <!--                       android:layout_gravity="center"-->
+                    <!--                       android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+                    <!--                       android:background="@drawable/roundedittext"-->
+                    <!--                       android:hint="Country"-->
+                    <!--                       android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                    <!--                       android:paddingTop="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingRight="@dimen/edittext_signup_peding"-->
+                    <!--                       android:paddingBottom="@dimen/edittext_signup_peding"-->
+                    <!--                       android:textColor="@color/edti_text_color"-->
+                    <!--                       android:textColorHint="@color/edti_text_color"-->
+                    <!--                       android:textSize="@dimen/edittext_signup_text_siz" />-->
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <!--       <LinearLayout-->
+        <!--           android:layout_width="match_parent"-->
+        <!--           android:layout_height="0dp"-->
+        <!--           android:layout_marginTop="@dimen/dimen_50"-->
+        <!--           android:layout_marginBottom="@dimen/dimen_50"-->
+        <!--           android:orientation="vertical"-->
+        <!--           android:layout_weight="1">-->
+        <Button
+            android:id="@+id/btnLoanSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_10"
+            />
+        <!--       </LinearLayout>-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

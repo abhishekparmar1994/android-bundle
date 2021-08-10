@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/constrainFour">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Red"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextAppearance="@style/myActionButtonStyle"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Document Details"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/imgAdhareOneFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@drawable/adahrfront"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/imageviewborder"
+                            android:padding="@dimen/_3sdp"/>
+                        <ImageView
+                            android:id="@+id/imgAdhareTwoFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@drawable/aadharsecond"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/imageviewborder"
+                            android:padding="@dimen/_3sdp">
+                        </ImageView>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="AdharCard Number"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtAdhareCardNumberFour"
+                                android:maxLength="16"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--                    <EditText-->
+                        <!--                    android:id="@+id/edtAdhareCardNumber"-->
+                        <!--                    android:layout_width="fill_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_gravity="center"-->
+                        <!--                    android:background="@drawable/roundedittext"-->
+                        <!--                    android:hint="AdharCard Number "-->
+                        <!--                    android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                        <!--                    android:paddingTop="@dimen/edittext_signup_peding"-->
+                        <!--                    android:paddingRight="@dimen/edittext_signup_peding"-->
+                        <!--                    android:paddingBottom="@dimen/edittext_signup_peding"-->
+                        <!--                    android:textColor="@color/edti_text_color"-->
+                        <!--                    android:textColorHint="@color/edti_text_color"-->
+                        <!--                    android:textSize="@dimen/edittext_signup_text_siz"-->
+                        <!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                    android:maxLength="16"-->
+                        <!--                    />-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/imgPancardFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:src="@drawable/pancard"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/imageviewborder"
+                            android:padding="@dimen/_3sdp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="PanCard Number"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/edtPancardNumberFour"
+                                android:maxLength="11"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--                    <EditText-->
+                        <!--                        android:id="@+id/edtPancardNumber"-->
+                        <!--                        android:layout_width="fill_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_gravity="center"-->
+                        <!--                        android:background="@drawable/roundedittext"-->
+                        <!--                        android:hint="PanCard Number "-->
+                        <!--                        android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+                        <!--                        android:paddingTop="@dimen/edittext_signup_peding"-->
+                        <!--                        android:paddingRight="@dimen/edittext_signup_peding"-->
+                        <!--                        android:paddingBottom="@dimen/edittext_signup_peding"-->
+                        <!--                        android:textColor="@color/edti_text_color"-->
+                        <!--                        android:textColorHint="@color/edti_text_color"-->
+                        <!--                        android:textSize="@dimen/edittext_signup_text_siz"-->
+                        <!--                        android:layout_marginBottom="@dimen/_10sdp"-->
+                        <!--                        android:maxLength="11"/>-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUserDocumentNextFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_10"
+            tools:ignore="MissingConstraints"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

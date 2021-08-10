@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBardilog"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_1sdp"
+        android:paddingTop="@dimen/_1sdp"
+        app:SpinKit_Color="@color/Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/lindilogview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/dilogimgclose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1.7"
+                android:background="#01FFFFFF"
+                android:src="@drawable/ic_close_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="Investor"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ciecleimgdilog"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:gravity="left" />
+                <!--                android:src="@drawable/diloguser"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtdilogName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ckinfotech"
+                    android:singleLine="true"
+                    android:textColor="@color/edti_text_color"
+                    android:textColorHint="@color/edti_text_color"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txtdilogEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:hint="Ckinfotech@gmail.com"
+                    android:singleLine="true"
+                    android:textColor="@color/edti_text_color"
+                    android:textColorHint="@color/edti_text_color"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btndilogSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/roundbuttondilog"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="  Profile Edit   "
+            android:textColor="@color/edti_text_color"
+            android:textSize="@dimen/_10sdp"></Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#507b7c7c" />
+
+        <LinearLayout
+            android:id="@+id/linDilogServiceJoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linDilogApplyLoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/appliloan"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Apply Loan"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lindilogloanstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/loanstatus"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Loan Status"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/loancancel"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Apply Loan Cancel"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linDilogpayLoans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/payloans"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="pay Loans"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/deposit"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Fixed deposit"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/saving"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Saving"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/share"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/txtdilogshare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Share Referral Code"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/contecus"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/txtdilogcontus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Contact Us"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/seting"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Seting"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/policy"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/logout"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/txtdiloglogout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.5"
+                            android:text="Logout"
+                            android:textColor="@color/blackoff"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            /////////////
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linDilogService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/activemember"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtdilogmembershipactiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="0.5"
+                    android:text="Active membership"
+                    android:textColor="@color/blackoff"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/logout"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/txtdiloglogoutservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_weight="0.5"
+                    android:text="Logout"
+                    android:textColor="@color/blackoff"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

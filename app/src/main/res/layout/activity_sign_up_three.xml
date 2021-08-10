@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangActivity.SignUpTwoActivity"
+    android:id="@+id/constrenSignThree">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Red"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextAppearance="@style/myActionButtonStyle"
+            app:titleTextColor="@color/white"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nominee Details"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dimen_35"
+                            android:visibility="gone">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/cirSignup"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/user_three" />
+                            <!--                app:civ_border_width="2dp"-->
+                            <!--                app:civ_border_color="#FF000000"-->
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginLeft="45dp"
+                                android:layout_marginBottom="@dimen/dimen_5"
+                                android:src="@drawable/cameraimg" />
+                        </FrameLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="Name"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNameTheree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="Relation"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtRelasionThree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="Mobile Number"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNumberThreee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="10"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15ssp"
+                            android:hint="Aadhar Card Number"
+                            android:paddingLeft="@dimen/edittext_signup_peding_left"
+                            android:paddingRight="@dimen/edittext_signup_peding"
+                            app:boxStrokeWidth="@dimen/_2sdp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            tools:ignore="MissingConstraints">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtAdharecardNumberThreee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <!--       <LinearLayout-->
+            <!--           android:layout_width="match_parent"-->
+            <!--           android:layout_height="0dp"-->
+            <!--           android:layout_marginTop="@dimen/dimen_50"-->
+            <!--           android:layout_marginBottom="@dimen/dimen_50"-->
+            <!--           android:orientation="vertical"-->
+            <!--           android:layout_weight="1">-->
+            <Button
+                android:id="@+id/btnNextThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:background="@drawable/roundbutton"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="Next"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_20" />
+            <!--       </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

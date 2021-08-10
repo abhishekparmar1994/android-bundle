@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/constrainlogin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Red"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/myActionButtonStyle"
+            tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/lin_signup_marginleft"
+            android:layout_marginRight="@dimen/lin_signup_marginRight">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_25">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgLoginUser"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/user_three"
+                    android:layout_gravity="center"/>
+                <!--                app:civ_border_width="2dp"-->
+                <!--                app:civ_border_color="#FF000000"-->
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Email / Mobile Number"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                tools:ignore="MissingConstraints"
+                app:boxStrokeWidth="@dimen/_2sdp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtLoginMobile"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_25ssp"
+                android:hint="Password"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                tools:ignore="MissingConstraints"
+                app:boxStrokeWidth="@dimen/_2sdp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtLoginPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <EditText-->
+
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/roundedittext"-->
+<!--                android:textSize="@dimen/edittext_signup_text_siz"-->
+<!--                android:hint="Email / Mobile Number"-->
+<!--                android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+<!--                android:paddingRight="@dimen/edittext_signup_peding"-->
+<!--                android:paddingTop="@dimen/edittext_signup_peding"-->
+<!--                android:paddingBottom="@dimen/edittext_signup_peding"-->
+<!--                android:layout_marginBottom="@dimen/edittext_signup_marginBotom"-->
+<!--                android:textColor="@color/edti_text_color"-->
+<!--                android:textColorHint="@color/edti_text_color"-->
+<!--                />-->
+<!--            <EditText-->
+<!--                android:id="@+id/edtLoginPassword"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/roundedittext"-->
+<!--                android:textSize="@dimen/edittext_signup_text_siz"-->
+<!--                android:hint="Password"-->
+<!--                android:paddingLeft="@dimen/edittext_signup_peding_left"-->
+<!--                android:paddingRight="@dimen/edittext_signup_peding"-->
+<!--                android:paddingTop="@dimen/edittext_signup_peding"-->
+<!--                android:paddingBottom="@dimen/edittext_signup_peding"-->
+<!--                android:layout_marginBottom="@dimen/dimen_55"-->
+<!--                android:textColor="@color/edti_text_color"-->
+<!--                android:textColorHint="@color/edti_text_color"-->
+<!--                />-->
+
+            <Button
+                android:id="@+id/btnLoginLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:textSize="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_25"></Button>
+            <Button
+                android:id="@+id/btnLoginSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbuttonwhite"
+                android:textColor="@color/black"
+                android:text="Sign Up"
+                android:textSize="@dimen/dimen_20"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

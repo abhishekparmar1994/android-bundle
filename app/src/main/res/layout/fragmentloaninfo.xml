@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/layoutborder"
+            android:padding="@dimen/_7sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Amount"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtInfoLoanAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loan Amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:singleLine="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emi Month"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtEmiMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emi Month"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Interest"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtMonthlyInterestAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Interest"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emi Date"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtinfoEmiDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emi Date"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emi Bounce Charge"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtEmiBounceCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emi Bounce Charge"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_5sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Total Amount"
+                    android:textSize="@dimen/_17sdp"
+                    android:textColor="@color/edti_text_color"
+                    android:layout_weight="1"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/txtLoanTotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loan Total Amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/_17sdp"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/_3sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@color/RedLitte"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loan Status"
+                android:textSize="@dimen/_17sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17sdp"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_3sdp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edittext_signup_peding">10dp</dimen>
+    <dimen name="edittext_signup_peding_left">10dp</dimen>
+    <dimen name="edittext_signup_text_siz">20dp</dimen>
+    <dimen name="edittext_signup_marginBotom">15dp</dimen>
+
+    <dimen name="lin_signup_marginRight">35dp</dimen>
+    <dimen name="lin_signup_marginleft">35dp</dimen>
+
+
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_85">58dp</dimen>
+
+</resources>
